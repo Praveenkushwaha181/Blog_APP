@@ -3,7 +3,7 @@
 A full-stack blog platform built with the MERN stack, featuring JWT-based authentication and complete CRUD functionality for blog posts.
 
 🔗 **Live Demo:** https://blog-app-iota-ebon.vercel.app  
-💻 **Backend API:** https://blog-app-tfnv.onrender.com
+
 
 > Note: Backend is hosted on Render's free tier — the first request after inactivity may take 30-50 seconds to respond while the server wakes up.
 
