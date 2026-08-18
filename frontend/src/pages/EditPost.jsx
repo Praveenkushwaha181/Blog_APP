@@ -158,7 +158,7 @@ const EditPost = () => {
 
         try {
 
-            const response = await axios.get( `https://blog-app-tfnv.onrender.com/getpost/${id}`);
+            const response = await axios.get( `https://blog-app-tfnv.onrender.com/api/auth/getpost/${id}`);
             setTitle(response.data.title);
             setContent(response.data.content);
         } catch (error) {
@@ -180,7 +180,7 @@ const EditPost = () => {
             setLoading(true);
             const payload = {title, content};
 
-            const response = await axios.put(`https://blog-app-tfnv.onrender.com/editpost/${id}`, payload,
+            const response = await axios.put(`https://blog-app-tfnv.onrender.com/api/auth/editpost/${id}`, payload,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`

@@ -25,7 +25,7 @@ const Signup = () => {
         try {
             setLoading(true);
             const payloads = {name,email,password};
-            const res = await axios.post("https://blog-app-tfnv.onrender.com/signup", payloads);
+            const res = await axios.post("https://blog-app-tfnv.onrender.com/api/auth/signup", payloads);
 
             toast.success(res.data.message);
 
