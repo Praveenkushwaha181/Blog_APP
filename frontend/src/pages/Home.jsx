@@ -102,7 +102,7 @@ const Home = () => {
         
         try {
 
-            const response = await axios.get( "http://localhost:3000/api/auth/getpost" );
+            const response = await axios.get( "https://blog-app-tfnv.onrender.com/getpost" );
             setPosts(response.data);
         } catch (error) {
 
@@ -126,7 +126,7 @@ const Home = () => {
         try {
 
             const response = await axios.delete(
-                `http://localhost:3000/api/auth/deletepost/${postId}`,
+                `https://blog-app-tfnv.onrender.com/deletepost/${postId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`

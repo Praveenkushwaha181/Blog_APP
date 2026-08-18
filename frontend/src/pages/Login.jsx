@@ -115,7 +115,7 @@ const Login = () => {
         try {
             setLoading(true);
             const payloads = {email, password};
-            const res = await axios.post("http://localhost:3000/api/auth/login", payloads);
+            const res = await axios.post("https://blog-app-tfnv.onrender.com/login", payloads);
 
             localStorage.setItem("token", res.data.token);
             toast.success(res.data.message);

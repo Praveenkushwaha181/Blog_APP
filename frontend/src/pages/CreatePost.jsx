@@ -141,7 +141,7 @@ const CreatePost = () => {
 
             const payload = {title,content };
 
-            const response = await axios.post( "http://localhost:3000/api/auth/createpost", payload,
+            const response = await axios.post( "https://blog-app-tfnv.onrender.com/createpost", payload,
                 {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem("token")}`
